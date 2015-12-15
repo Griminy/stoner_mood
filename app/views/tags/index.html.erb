@@ -1,0 +1,7 @@
+<%=link_to "New tag", new_tag_path %>
+<h1>List of tags </h1>
+<% if @tags.count < 1 %> 
+	<%= render "blank" %>
+<% else %>
+	<%= render "list" %>
+<% end %>
